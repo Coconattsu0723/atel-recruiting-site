@@ -1,101 +1,139 @@
-# ATEL Portfolio Case Study
+# ATEL / 架空空間デザイン会社 採用・キャリアサイト
 
-## 1. 基本情報
+https://coconattsu0723.github.io/atel-recruiting-site/
+
+総制作期間：2026/10/6〜10/10
+
+デザイン期間：2026/10/6〜10/9
+
+実装・公開・QA：2026/10/9〜10/10
+
+制作期間：約5日間
 
 | 項目 | 内容 |
 | --- | --- |
-| Project | ATEL Recruiting Site |
-| Category | Web Design / Front-end Development |
-| Site Type | Multi-page Recruiting Site |
-| Pages | HOME / PEOPLE / JOBS / JOB DETAIL / ENTRY |
-| Concept | `BEHIND THE SPACE` |
-| Key Message | `SPACE IS NEVER MADE ALONE.` |
-| Primary CV | ENTRYフォームの完了 |
-| Tools | Pencil / Photoshop / HTML / CSS / Vanilla JavaScript / Git / GitHub |
-| URL | https://coconattsu0723.github.io/atel-recruiting-site/ |
+| 制作区分 | 自主制作（架空サイト） |
+| 担当 | 企画 / 情報設計 / デザイン / 画像制作・加工 / コーディング / QA / 公開 |
+| ツール | Pencil / Photoshop / HTML / CSS / Vanilla JavaScript / Git / GitHub |
+| ページ数 | 5ページ（HOME / PEOPLE / JOBS / JOB DETAIL / ENTRY）+複数のUI状態、レスポンシブ対応 |
+| サイト種別 | Multi-page Recruiting Site |
+| プライマリCV | ENTRYフォームの送信完了 |
 
-## 2. 一覧掲載用コピー
+## ATEL｜架空空間デザイン会社 採用・キャリアサイト
 
-### Short
+### 制作区分
 
-空間づくりの裏側にいる「人と仕事」を可視化した、架空の空間デザイン会社ATELの採用サイト。
+架空の自主制作として、店舗・商業空間の企画、設計、施工を手がけるデザイン会社「ATEL」の採用・キャリアサイトを制作しました。
 
-### Medium
+企画、架空企業設定、ターゲット設計、サイトマップ、導線設計、コピー、Desktop / Mobileデザイン、画像加工、HTML / CSS / JavaScript実装、アクセシビリティ対応、GitHub Pagesでの公開、公開後QAまで一貫して担当しています。
 
-完成した空間だけでは見えにくい職種と人のつながりを、人物インタビュー、募集職種Filter、Job Detail、応募フォームまで一貫した導線で設計した採用サイトです。
+### サイト概要
 
-## 3. 詳細掲載用コピー
+ATELは、カフェ、レストラン、アパレルショップなどの店舗・商業空間を、コンセプト設計から空間設計、什器、サイン、施工、プロジェクトマネジメントまで一貫して手がける架空企業です。
 
-ATELは、店舗・商業空間の企画、設計、施工を手がける架空企業を想定した採用・キャリアサイトです。
+完成した空間の写真だけでは伝わりにくい「どのような人が、どのように協力して空間をつくっているのか」を可視化し、求職者が会社と仕事を理解した上で、自分に合う職種を探し、応募完了まで進めることを目指しました。
 
-空間デザイン会社では完成事例が前面に出やすい一方、求職者にとって重要な「どのような職種があるか」「職種同士がどう関わるか」「どのような人が働いているか」が見えにくいという課題を設定しました。
+### ターゲット
 
-そこで`BEHIND THE SPACE`をコンセプトに、完成した空間の裏側にいる人と仕事を主役として構成。HOMEからPEOPLE、JOBS、JOB DETAIL、ENTRYへ進む主導線に加え、人物から関連職種へ進むPerson-firstの導線、条件から仕事を探すJob-firstの導線を用意しました。
+メインターゲットは、建築、インテリア、空間デザイン分野を志望する新卒、第二新卒、実務経験のある20代〜30代前半の中途人材です。
 
-ビジュアルは、設計図のような秩序と、Paint Graphicや写真の重なりによる人間らしい偶発性を組み合わせています。実装ではHTML、CSS、Vanilla JavaScriptを使用し、Filter、Dialog、Query Parameter、FormのError / Confirm / Complete、レスポンシブ、Keyboard操作まで含めて設計しました。
+完成事例のビジュアルだけでなく、実際の仕事の進め方、職種同士の関係、働く人の考え方、自分が応募できる条件を知りたい人を想定しました。
 
-## 4. 課題と解決
+### 制作目的
 
-### Problem
+空間デザイン会社の採用情報では、完成事例の魅力に比べ、職種の違い、仕事のつながり、働く人、応募条件が分散しやすいという課題を設定しました。
 
-- 完成事例だけでは、実際の仕事内容や働く人が伝わりにくい
-- 8職種の違いと連携関係を理解しづらい
-- 新卒・中途、勤務地など、自分に合う募集を探しにくい
-- 人物理解と募集要項、応募フォームが分断されやすい
+そこで、求職者が「どのような職種があるのか」「職種同士がどう関わるのか」「どのような人が働いているのか」「自分に合う募集があるのか」を順番に理解し、ENTRYフォームの完了まで迷わず進める採用体験を設計しました。
 
-### Approach
+### デザインコンセプト
 
-- 工程、職種、人物、募集を同じストーリー上に配置
-- Person → Job、Job → Personの双方向リンクを設計
-- 3分類のAND FilterとFiltered / Empty Stateを実装
-- Job DetailからENTRYへ職種情報を保持
-- FormにInput / Error / Confirm / Completeを用意
+採用コンセプトは「BEHIND THE SPACE」、キーメッセージは「SPACE IS NEVER MADE ALONE.」としました。完成した空間の裏側にいる、企画する人、考える人、図面を引く人、現場を動かす人の連携を主役にするためのコンセプトです。
 
-### Outcome
+ビジュアルは「Architectural × Editorial × Human」を軸に、設計図のような秩序と、Paint Graphicや写真の重なりによる人間らしい偶発性を組み合わせました。Off WhiteとInkをベースに、部門ごとのアクセントカラー、大きな英字タイポグラフィ、Rectangle / Circle / Polaroid / Organic Maskの4種類の画像フレームで世界観を統一しています。
 
-求職者が「会社を知る」だけでなく、「人を知る」「仕事を探す」「条件を確認する」「応募する」まで迷わず進める採用UXとしてまとめました。
+### 制作プロセス
 
-## 5. 担当範囲
+まず、架空企業の事業内容、企業規模、募集職種、採用課題を定義し、ターゲットとプライマリCVを整理しました。その後、ユーザーが会社、人、職種、募集条件をどの順番で理解するかをサイトマップとユーザーフローに落とし込みました。
 
-- 企画・架空企業設定
-- 採用課題、Target、Primary CVの定義
-- Sitemap、Information Architecture、User Flow
-- Brand Concept、Copy、Visual Direction
-- Desktop / Mobile UI Design
-- Image Direction、Paint Graphic、画像加工
-- HTML / CSS / Vanilla JavaScript実装
-- Responsive、Accessibility、Metadata
-- GitHub Pages公開、Production QA
+PencilでHOME、PEOPLE、Interview Dialog、JOBSの通常 / Filtered / Empty、JOB DETAIL、ENTRYのINPUT / CONFIRM / COMPLETE、Mobile MenuをDesktop / Mobileの両方で設計し、Screen Mapで画面同士のつながりも確認しました。画像はWeb表示用のサイズに最適化し、透過が必要なPaint、人物の切り抜き、フレーム素材は透過情報を保ったまま書き出しています。
 
-## 6. 工夫したポイント
+実装はHTML5、CSS3、Vanilla JavaScriptで行い、共通UIからHOME、PEOPLE、JOBS、JOB DETAIL、ENTRYの順に展開しました。最後に全6種類の画面幅、マウス、タッチ、キーボード操作、画像読み込み、リンク、Console Error、公開環境を確認し、GitHub Pagesへ公開しました。
 
-### 人物と職種の双方向導線
+### 情報設計
 
-人物に興味を持ったユーザーはInterview Dialogから関連職種へ、職種から入ったユーザーはJob Detailから関連社員へ移動できます。どの入口からでも応募検討に必要な情報へ接続できる構造にしました。
+サイト全体の基本導線は「HOME → PEOPLE → JOBS → JOB DETAIL → ENTRY」です。一方で、ユーザーの興味の入り口は同じではないため、条件から職種を探すJob-first導線と、働く人への共感から関連職種へ進むPerson-first導線も用意しました。
 
-### URLに残るUI状態
+PEOPLEのInterview Dialogから関連職種へ、JOB DETAILから関連社員へ移動できるようにし、Person → Job、Job → Personの双方向導線を維持しています。8職種は部門、応募区分、勤務地で絞り込めるようにし、条件に合う募集がない場合のEmpty Stateも設計しました。
 
-JOBSのFilter、PEOPLEのInterview、JOB DETAILとENTRYの職種はQuery Parameterへ同期します。直接アクセス、再読み込み、Back / Forwardでも状態を復元できます。
+### 応募導線の工夫
 
-### 応募前後の不安を減らすForm
+応募をむやみに急がせるのではなく、仕事と条件を十分に理解してからENTRYへ進めるよう、各画面の役割を分けました。HOMEで全体像を知り、PEOPLEで働く人を知り、JOBSで候補を絞り、JOB DETAILで仕事内容と応募条件を確認する流れです。
 
-エラーを項目単位と一覧の両方で示し、確認画面から対応項目へ戻れるようにしました。完了画面でも応募職種と区分を再表示します。
+JOB DETAILからENTRYへ移動する際は、URLのQuery Parameterで職種を引き継ぎ、応募フォームに選択済みの職種を表示します。ENTRYでは必須項目のError Summary、項目ごとのError、入力内容の確認、修正時の値保持、完了画面を用意し、応募前後の不安を減らすことを意識しました。
 
-### 装飾と可読性の両立
+### レスポンシブ対応で工夫した点
 
-Paint GraphicやCut-out Personを使いながら、本文、Filter、条件、FormはGridと余白で整理し、装飾だけに情報を依存しない設計にしています。
+Mobile Firstを基本に、375 / 390 / 768 / 1024 / 1366 / 1440pxで画面を確認しました。PC版の写真の重なりや大きなタイポグラフィをそのまま縮小するのではなく、Mobile版では情報の優先順位に合わせて並び順、写真のトリミング、余白、導線を組み直しています。
 
-## 7. 掲載画像の推奨順
+ナビゲーションは全画面Mobile Menuに切り替え、Escキーでの閉じる操作、Focus Trap、閉じた後のFocus Return、背景スクロール停止を実装しました。JOB DETAILのSticky Entry CTAはDesktopのみに限定し、Mobileでは本文の流れを妨げないSection内CTAに切り替えています。
 
-1. `portfolio/atel-home-overview.png` — HOMEのProject / People連携
+### 共通パーツ化した部分
+
+Header、Mobile Menu、Footer、Button、Text Link、Section Heading、Card、Department Label、Filter、Dialog、Formを共通ルールと共通CSSで管理しました。同じ役割のUIをページごとに作り直さず、操作感と見た目を統一しています。
+
+8職種と6名の人物情報は共通データとして定義し、JOBSの一覧、JOB DETAIL、ENTRY、PEOPLEの関連導線から同じ情報を参照する構成にしました。これにより、表示する職種名や条件、関連情報の不整合が起きにくいようにしています。
+
+### HTML / CSS / JavaScriptで工夫した点
+
+HTMLは見出し構造と`header`、`nav`、`main`、`footer`などの役割が分かる要素を使い、ページの内容を読み取りやすくしました。装飾画像は空の`alt`、内容を伝える画像は具体的な日本語の`alt`を設定しています。
+
+CSSは色、文字、余白、角丸、モーションをToken化し、共通レイアウトとページ固有の表現を分けました。画像にはサイズまたは`aspect-ratio`を指定し、遅延読み込みと組み合わせてレイアウトのずれを抑えました。モーションは`prefers-reduced-motion`で抑制できます。
+
+JavaScriptでは、JOBSのAND絞り込み、PEOPLEのInterview Dialog、JOB DETAILの職種切り替え、ENTRYのValidationとINPUT / CONFIRM / COMPLETEの状態管理を実装しました。Filter、Interview、職種、応募職種をQuery Parameterと同期し、再読み込みやBack / Forwardでも状態を復元できるようにしています。`aria-expanded`、`aria-pressed`、`aria-live`などを状態と同期させ、マウス以外の操作も確認しました。
+
+### 自分で判断・修正した点
+
+制作中は、デザインの再現だけではなく、実際の画面で読みやすいか、操作状態が理解できるか、次に進む先が明確かを確認しながら調整しました。
+
+例えば、HOMEのHeroとMESSAGEに使用していた縦のGrid Lineは、公開画面で写真やタイポグラフィより強く見えるため削除しました。また、公開後に古いCSSがブラウザキャッシュに残るケースに対応するため、スタイルシートの参照URLに更新識別子を付けました。
+
+JOBSではFiltered Stateだけでなく0件時のEmpty State、JOB DETAILでは無効な職種が指定された場合のNot Found、ENTRYではError / Confirm / Completeを用意しました。通常時だけでなく、例外や戻る操作まで含めて一つの体験として設計した点が、自分で特に重視した部分です。
+
+### AIをどう活用したか
+
+AIは、架空企業の設定と採用課題の整理、画面設計の展開、実装、テスト項目の洗い出し、文書化の補助として活用しました。各ページの目的、情報の優先順位、ブランド表現、画面の採用可否、公開後の見え方に関する最終判断は、実際の画面を確認しながら自分で行っています。
+
+また、一度の出力をそのまま完成とせず、画面ごとに要件と一致するかを確認し、写真の見え方、テキストの折り返し、余白、操作状態を修正しました。AIに任せた作業と自分で決定した内容を分け、制作物の意図を説明できる状態にすることを意識しました。
+
+### 今後改善したい点
+
+現在のENTRYは操作確認用のDemoであり、入力内容を外部へ送信しません。実運用を想定する場合は、バックエンド送信、スパム対策、ファイル管理、自動返信、個人情報保護の運用設計が必要です。
+
+また、募集情報と社員インタビューを更新するCMS、フィルターから応募完了までの行動分析、実際の求職者によるユーザビリティテストを追加することで、運用性と応募導線の精度をさらに高めたいと考えています。
+
+### ポートフォリオ掲載用の短い説明文
+
+店舗・商業空間を手がける架空企業「ATEL」の採用・キャリアサイトを制作しました。「BEHIND THE SPACE」をコンセプトに、完成した空間の裏側にいる人と仕事を可視化。人物インタビュー、8職種の絞り込み、募集詳細、応募フォームまでを一貫した導線で設計し、HTML、CSS、Vanilla JavaScriptでレスポンシブ対応しました。
+
+### 面接で話す用の説明
+
+この作品は、店舗・商業空間を手がける架空のデザイン会社「ATEL」の採用サイトです。完成した空間の実績だけでは、求職者に職種の違いや働く人、チームの連携が伝わりにくいと考え、「BEHIND THE SPACE」をコンセプトに設計しました。
+
+情報設計では、HOMEからPEOPLE、JOBS、JOB DETAIL、ENTRYへ進む基本導線に加えて、働く人から関連職種へ進む導線と、条件から自分に合う職種を探す導線を用意しました。特に、JOBSの複数条件フィルター、人物と職種の双方向導線、JOB DETAILからENTRYへの職種引き継ぎ、入力エラーから完了までのフォーム状態を一続きで設計した点が特徴です。
+
+デザインは、設計図のような整然さと、Paint Graphicや写真の重なりによる人間らしさを組み合わせました。実装後は375pxから1440pxまでのレスポンシブ、キーボード操作、Focus、画像の表示、リンク、Console Errorを確認し、GitHub Pagesで公開しました。見た目だけでなく、求職者が情報を理解し、迷わず応募まで進める体験を重視した制作です。
+
+## 掲載画像の推奨順
+
+1. `portfolio/atel-home-overview.png` — HOMEのPROJECT × PEOPLEとPEOPLEセクション
 2. `portfolio/atel-screen-map.png` — 主要導線と画面状態
 3. `portfolio/atel-people-interview.png` — 人物から関連職種への導線
-4. `portfolio/atel-jobs-filtered.png` — 複数条件Filter
-5. `portfolio/atel-entry-complete.png` — Primary CVの完了状態
+4. `portfolio/atel-jobs-filtered.png` — 複数条件フィルター
+5. `portfolio/atel-entry-complete.png` — プライマリCVの完了状態
 
-一覧サムネイルには、HOMEのProject / People連携またはPEOPLEのInterview Dialogを使用する。詳細ページでは、Screen Mapを先に置いてから各機能の画面を並べると、見た目だけでなく設計意図も説明しやすい。
+一覧サムネイルにはHOMEのPROJECT × PEOPLE、詳細ページではScreen Mapを先に置いてから各機能の画面を並べると、見た目と設計意図の両方を説明しやすくなります。
 
-## 8. 注記
+## 注記
 
 - 本作品は自主制作の架空プロジェクトです。
 - 企業、人物、募集職種、応募情報はすべてフィクションです。
