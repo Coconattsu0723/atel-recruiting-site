@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://coconattsu0723.github.io/atel-recruiting-site/sitemap.xml

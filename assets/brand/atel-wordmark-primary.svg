@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1763 326" role="img" aria-labelledby="title desc">
+  <title id="title">ATEL</title>
+  <desc id="desc">ATEL architectural wordmark</desc>
+  <g fill="#000000" shape-rendering="geometricPrecision">
+    <path d="M211 0h72L78 325H0L211 0Z"/>
+    <path d="M211 0h72l203 325h-79L211 0Z"/>
+    <path d="M144 169h197v44H144z"/>
+    <path d="M435 0h424v50H435z"/>
+    <path d="M609 0h73v325h-73z"/>
+    <path d="M903 0h412v50H903z"/>
+    <path d="M903 0h73v325h-73z"/>
+    <path d="M903 142h412v49H903z"/>
+    <path d="M903 280h412v45H903z"/>
+    <path d="M1376 0h77v325h-77z"/>
+    <path d="M1376 280h386v45h-386z"/>
+  </g>
+</svg>

@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ATELの採用応募フォームです。希望職種と応募情報を入力し、内容を確認して応募を完了できます。">
+  <meta name="theme-color" content="#f4f1ea">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="ATEL RECRUITING">
+  <meta property="og:title" content="ENTRY | ATEL RECRUITING">
+  <meta property="og:description" content="ATELの採用応募フォームです。希望職種と応募情報を入力し、内容を確認して応募を完了できます。">
+  <meta property="og:url" content="https://coconattsu0723.github.io/atel-recruiting-site/pages/entry.html">
+  <meta property="og:image" content="https://coconattsu0723.github.io/atel-recruiting-site/assets/images/home/home-hero-team-collaboration.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1536">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="空間づくりの現場で図面を確認するATELのチーム">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>ENTRY | ATEL RECRUITING</title>
+  <link rel="canonical" href="https://coconattsu0723.github.io/atel-recruiting-site/pages/entry.html">
+  <link rel="icon" href="../assets/brand/atel-wordmark-primary.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/pages/entry.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">本文へ移動</a>
+
+  <header class="site-header" data-site-header>
+    <div class="site-header__inner container">
+      <a class="site-logo" href="../index.html" aria-label="ATEL ホーム"><img src="../assets/brand/atel-wordmark-primary.svg" width="180" height="34" alt="ATEL"></a>
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="people.html">PEOPLE</a></li>
+          <li><a class="site-nav__link" href="jobs.html">JOBS</a></li>
+          <li><a class="button button--primary site-nav__entry" href="entry.html" aria-current="page">ENTRY</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-controls="mobile-menu" aria-expanded="false" data-menu-open><span class="menu-toggle__lines" aria-hidden="true"></span></button>
+    </div>
+  </header>
+
+  <dialog class="mobile-menu" id="mobile-menu" data-mobile-menu aria-label="サイトメニュー">
+    <div class="mobile-menu__inner">
+      <div class="mobile-menu__header">
+        <img src="../assets/brand/atel-wordmark-reverse.svg" width="180" height="34" alt="ATEL">
+        <button class="menu-toggle mobile-menu__close" type="button" aria-label="メニューを閉じる" data-menu-close><span class="mobile-menu__close-icon" aria-hidden="true"></span></button>
+      </div>
+      <nav class="mobile-menu__nav" aria-label="モバイルナビゲーション">
+        <p class="eyebrow mobile-menu__eyebrow">MENU / SITE NAVIGATION</p>
+        <ul class="mobile-menu__list">
+          <li><a class="mobile-menu__link" href="../index.html"><small>01</small><span>HOME<em>ATELの考え方</em></span><b>→</b></a></li>
+          <li><a class="mobile-menu__link" href="people.html"><small>02</small><span>PEOPLE<em>働く人と専門性</em></span><b>→</b></a></li>
+          <li><a class="mobile-menu__link" href="jobs.html"><small>03</small><span>JOBS<em>募集職種を探す</em></span><b>→</b></a></li>
+          <li><a class="mobile-menu__link mobile-menu__link--entry" href="entry.html" aria-current="page"><small>04</small><span>ENTRY<em>応募フォームへ</em></span><b>CURRENT</b></a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu__meta"><span class="eyebrow">APPLICATION</span><strong data-selected-job-title>POSITION NOT SELECTED</strong><a href="jobs.html">募集職種一覧へ戻る</a><span class="eyebrow">SPACE IS NEVER MADE ALONE.</span></div>
+    </div>
+  </dialog>
+
+  <main id="main">
+    <section class="entry-hero section--ink" aria-labelledby="entry-title">
+      <img class="entry-hero__paint" data-entry-paint src="../assets/images/paint/paint-design-blue.png" width="3272" height="3310" alt="">
+      <div class="container entry-hero__layout">
+        <div class="entry-hero__copy">
+          <p class="eyebrow">ENTRY / <span data-state-label>INPUT</span></p>
+          <h1 id="entry-title" data-state-heading>応募フォーム</h1>
+          <p data-state-description>あなたの経験と希望を入力してください。</p>
+        </div>
+        <div class="entry-role-card" data-entry-role-card>
+          <small>応募職種 / APPLYING FOR</small>
+          <strong data-selected-job-title>POSITION NOT SELECTED</strong>
+          <dl>
+            <div><dt>応募区分</dt><dd data-selected-career>未選択</dd></div>
+            <div><dt>勤務地</dt><dd data-selected-location>未選択</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <nav class="entry-progress" aria-label="応募の進捗" data-entry-progress>
+      <ol class="container">
+        <li data-progress-step="input" aria-current="step"><span>01</span><strong>入力 / INPUT</strong></li>
+        <li data-progress-step="confirm"><span>02</span><strong>確認 / CONFIRM</strong></li>
+        <li data-progress-step="complete"><span>03</span><strong>完了 / COMPLETE</strong></li>
+      </ol>
+    </nav>
+
+    <div data-entry-input-panel>
+      <form class="entry-form" data-entry-form novalidate>
+        <div class="entry-error-summary" data-error-summary tabindex="-1" role="alert" aria-labelledby="error-summary-title" hidden>
+          <div class="container">
+            <h2 id="error-summary-title">入力内容をご確認ください</h2>
+            <p>修正が必要な項目があります。</p>
+            <ul data-error-summary-list></ul>
+          </div>
+        </div>
+
+        <section class="entry-form-section" aria-labelledby="applying-title">
+          <div class="container">
+            <div class="entry-section-title"><span>01</span><h2 id="applying-title">応募職種 / APPLYING FOR</h2></div>
+            <div class="entry-fields entry-fields--two">
+              <div class="entry-field" data-field="job">
+                <label for="entry-job">応募職種 / POSITION <em>必須</em></label>
+                <select id="entry-job" name="job" required aria-describedby="job-help job-error">
+                  <option value="">職種を選択してください</option>
+                  <option value="interior-designer">INTERIOR DESIGNER</option>
+                  <option value="spatial-designer">SPATIAL DESIGNER</option>
+                  <option value="graphic-sign-designer">GRAPHIC / SIGN DESIGNER</option>
+                  <option value="project-manager">PROJECT MANAGER</option>
+                  <option value="construction-manager">CONSTRUCTION MANAGER</option>
+                  <option value="planner-creative-director">PLANNER / CREATIVE DIRECTOR</option>
+                  <option value="account-producer">ACCOUNT PRODUCER</option>
+                  <option value="back-office">BACK OFFICE</option>
+                </select>
+                <small id="job-help" data-job-help>希望する職種を選択してください。</small>
+                <p class="entry-field__error" id="job-error" data-field-error hidden></p>
+                <p class="entry-field__notice" data-job-query-note hidden>指定された職種を確認できませんでした。募集職種一覧をご確認いただくか、上の選択肢からお選びください。<a href="jobs.html">募集職種を見る</a></p>
+              </div>
+              <fieldset class="entry-field entry-field--choice" data-field="applicationType">
+                <legend>応募区分 / APPLICATION TYPE <em>必須</em></legend>
+                <div class="entry-choice-grid">
+                  <label><input type="radio" name="applicationType" value="NEW GRADUATE" required aria-describedby="application-type-error"><span>新卒採用 / NEW GRADUATE</span></label>
+                  <label><input type="radio" name="applicationType" value="CAREER" required aria-describedby="application-type-error"><span>中途採用 / CAREER</span></label>
+                </div>
+                <p class="entry-field__error" id="application-type-error" data-field-error hidden></p>
+              </fieldset>
+            </div>
+          </div>
+        </section>
+
+        <section class="entry-form-section entry-form-section--surface" aria-labelledby="personal-title">
+          <div class="container">
+            <div class="entry-section-title"><span>02</span><h2 id="personal-title">基本情報 / PERSONAL INFORMATION</h2></div>
+            <div class="entry-fields entry-fields--two">
+              <div class="entry-field" data-field="name"><label for="entry-name">氏名 / NAME <em>必須</em></label><input id="entry-name" name="name" type="text" autocomplete="name" required aria-describedby="name-error"><p class="entry-field__error" id="name-error" data-field-error hidden></p></div>
+              <div class="entry-field" data-field="email"><label for="entry-email">メールアドレス / EMAIL <em>必須</em></label><input id="entry-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="email-error"><p class="entry-field__error" id="email-error" data-field-error hidden></p></div>
+              <div class="entry-field" data-field="phone"><label for="entry-phone">電話番号 / PHONE <em>必須</em></label><input id="entry-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required aria-describedby="phone-error"><p class="entry-field__error" id="phone-error" data-field-error hidden></p></div>
+              <div class="entry-field" data-field="preferredContact"><label for="entry-contact">希望連絡方法 / PREFERRED CONTACT</label><select id="entry-contact" name="preferredContact"><option value="メール">メール</option><option value="電話">電話</option><option value="どちらでも可">どちらでも可</option></select><small>選考連絡に使用する方法</small></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="entry-form-section" aria-labelledby="career-title">
+          <div class="container">
+            <div class="entry-section-title"><span>03</span><h2 id="career-title">経歴 / CAREER INFORMATION</h2></div>
+            <div class="entry-fields entry-fields--two">
+              <div class="entry-field" data-field="organization"><label for="entry-organization">現在の所属・前職 / COMPANY / SCHOOL <em>必須</em></label><input id="entry-organization" name="organization" type="text" autocomplete="organization" required aria-describedby="organization-error"><p class="entry-field__error" id="organization-error" data-field-error hidden></p></div>
+              <div class="entry-field" data-field="experience"><label for="entry-experience">経験年数 / YEARS OF EXPERIENCE <em>必須</em></label><select id="entry-experience" name="experience" required aria-describedby="experience-error"><option value="">選択してください</option><option value="未経験・1年未満">未経験・1年未満</option><option value="1〜2年">1〜2年</option><option value="3〜5年">3〜5年</option><option value="6〜9年">6〜9年</option><option value="10年以上">10年以上</option></select><p class="entry-field__error" id="experience-error" data-field-error hidden></p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="entry-form-section entry-form-section--surface" aria-labelledby="documents-title">
+          <div class="container">
+            <div class="entry-section-title"><span>04</span><h2 id="documents-title">ポートフォリオ・応募書類 / DOCUMENTS</h2></div>
+            <div class="entry-fields entry-fields--two">
+              <div class="entry-field" data-field="portfolio"><label for="entry-portfolio">ポートフォリオURL</label><input id="entry-portfolio" name="portfolio" type="url" inputmode="url" placeholder="https://portfolio.example.com" aria-describedby="portfolio-help portfolio-error"><small id="portfolio-help">閲覧用URLまたは共有リンク</small><p class="entry-field__error" id="portfolio-error" data-field-error hidden></p></div>
+              <div class="entry-field entry-upload" data-field="resume">
+                <label for="entry-resume">履歴書・職務経歴書 / RESUME</label>
+                <label class="entry-upload__drop" for="entry-resume"><strong>ファイルを選択またはドロップ</strong><small>PDF / DOC / DOCX / 最大10MB</small><span class="button entry-upload__button">ファイルを選択</span></label>
+                <input class="visually-hidden" id="entry-resume" name="resume" type="file" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" aria-describedby="resume-error">
+                <div class="entry-upload__file" data-uploaded-file hidden><span data-uploaded-name></span><button type="button" data-remove-file>削除 ×</button></div>
+                <p class="entry-field__error" id="resume-error" data-field-error hidden></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="entry-form-section" aria-labelledby="motivation-title">
+          <div class="container">
+            <div class="entry-section-title"><span>05</span><h2 id="motivation-title">志望動機 / MOTIVATION</h2></div>
+            <div class="entry-field" data-field="motivation">
+              <label for="entry-motivation">志望動機 / WHY ATEL / WHY THIS ROLE <em>必須</em></label>
+              <div class="entry-textarea-wrap"><textarea id="entry-motivation" name="motivation" rows="8" maxlength="800" required aria-describedby="motivation-count motivation-error" placeholder="志望理由、これまでの経験、ATELで取り組みたいことをご記入ください。"></textarea><small id="motivation-count" data-character-count>0 / 800</small></div>
+              <p class="entry-field__error" id="motivation-error" data-field-error hidden></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="entry-form-section entry-form-section--surface entry-agreement" aria-labelledby="agreement-title">
+          <div class="container">
+            <div class="entry-section-title"><span>06</span><h2 id="agreement-title">同意事項 / AGREEMENT</h2></div>
+            <div class="entry-field entry-consent" data-field="privacy">
+              <label><input type="checkbox" name="privacy" required aria-describedby="privacy-error"><span>Privacy Policyを確認し、応募情報の取り扱いに同意します。</span><em>必須</em></label>
+              <p class="entry-field__error" id="privacy-error" data-field-error hidden></p>
+            </div>
+            <div class="entry-actions">
+              <p>この画面はポートフォリオ用のデモです。実際の外部送信は行いません。</p>
+              <div><a class="button button--secondary" href="jobs.html">募集職種に戻る</a><button class="button button--primary" type="submit">応募内容を確認する</button></div>
+            </div>
+          </div>
+        </section>
+      </form>
+    </div>
+
+    <div data-entry-confirm-panel hidden>
+      <section class="entry-confirm" aria-labelledby="confirm-title">
+        <div class="container">
+          <div class="entry-section-title"><span>01</span><h2 id="confirm-title">応募内容の確認 / CONFIRM APPLICATION</h2></div>
+          <p>入力内容をご確認ください。修正する場合は各項目の「修正」から入力画面へ戻れます。</p>
+          <dl class="entry-confirm__grid" data-confirm-list></dl>
+          <p class="entry-confirm__consent">✓ Privacy Policyへの同意を確認しました。</p>
+        </div>
+      </section>
+      <section class="entry-confirm-actions">
+        <div class="container">
+          <div><strong>送信後は内容を変更できません。応募内容をご確認のうえ送信してください。</strong><p>この画面はポートフォリオ用のデモです。実際の外部送信は行いません。</p></div>
+          <div><button class="button button--secondary" type="button" data-back-to-input>入力画面に戻る</button><button class="button button--primary" type="button" data-demo-submit>応募を送信する</button></div>
+        </div>
+      </section>
+    </div>
+
+    <div data-entry-complete-panel hidden>
+      <section class="entry-complete" aria-labelledby="complete-title">
+        <img data-entry-paint src="../assets/images/paint/paint-design-blue.png" width="3272" height="3310" alt="">
+        <div class="container entry-complete__layout">
+          <div><p class="eyebrow">THANK YOU.</p><h2 id="complete-title">ご応募ありがとうございます。</h2><p>応募を受け付けました。入力いただいたメールアドレス宛に、受付内容をお送りします。選考のご連絡までしばらくお待ちください。</p><small>ポートフォリオ用デモのため、実際のメール送信は行いません。</small></div>
+          <div class="entry-complete__role"><small>応募内容 / APPLICATION</small><strong data-selected-job-title>POSITION NOT SELECTED</strong><span><b data-selected-career>未選択</b> / <b data-selected-location>未選択</b></span></div>
+          <div class="entry-complete__actions"><a class="button button--secondary" href="../index.html">HOMEへ戻る</a><a class="button button--primary" href="jobs.html">募集職種を見る</a></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand"><a class="site-footer__logo" href="#top" aria-label="ページ上部へ"><img src="../assets/brand/atel-wordmark-primary.svg" width="180" height="34" alt="ATEL"></a><p>SPACE IS NEVER MADE ALONE.</p><small>完成した空間の裏側にいる、<br>人と仕事を伝える採用サイト。</small></div>
+      <nav class="site-footer__nav" aria-label="フッターナビゲーション"><span class="site-footer__label">PAGES</span><a href="../index.html">HOME</a><a href="people.html">PEOPLE</a><a href="jobs.html">JOBS</a><a href="entry.html" aria-current="page">ENTRY</a></nav>
+      <div class="site-footer__nav"><span class="site-footer__label">APPLICATION</span><strong data-selected-job-title>POSITION NOT SELECTED</strong><span data-footer-application>SELECT A ROLE</span></div>
+      <div class="site-footer__action"><span class="site-footer__label">ACTION</span><a href="#top">BACK TO TOP ↑</a></div>
+    </div>
+    <div class="container site-footer__bottom"><span>FICTIONAL RECRUITING SITE / PORTFOLIO PROJECT</span><span>© 2026 ATEL</span></div>
+  </footer>
+
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/data.js" defer></script>
+  <script src="../assets/js/pages/entry.js" defer></script>
+</body>
+</html>

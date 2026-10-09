@@ -1,0 +1,902 @@
+:root {
+  --job-accent: var(--color-design);
+  --job-accent-text: var(--color-white);
+}
+
+[data-job-display-title],
+[data-job-tagline],
+[data-job-statement] {
+  white-space: pre-line;
+}
+
+.job-accent {
+  display: block;
+  width: 5.75rem;
+  height: 0.375rem;
+  background: var(--job-accent);
+}
+
+.job-hero {
+  min-height: 39.75rem;
+  overflow: hidden;
+}
+
+.job-hero__inner {
+  position: relative;
+  min-height: inherit;
+  padding-block: 1.625rem 1.75rem;
+}
+
+.job-hero__copy {
+  position: static;
+  z-index: 2;
+}
+
+.job-hero__copy > .eyebrow,
+.job-hero__copy > h1,
+.job-hero__copy > .job-accent,
+.job-hero__copy > .job-hero__tagline {
+  position: relative;
+  z-index: 2;
+}
+
+.job-hero h1 {
+  max-width: 46rem;
+  margin-block: var(--space-6) var(--space-6);
+  font-size: clamp(2.75rem, 12vw, 5.875rem);
+  letter-spacing: -0.05em;
+  line-height: 0.88;
+}
+
+.job-hero__tagline {
+  margin-block: var(--space-6) 0;
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+
+.job-hero__meta {
+  position: absolute;
+  z-index: 3;
+  inset: auto auto 1.75rem 0;
+  display: grid;
+  width: 9.5rem;
+  margin: 0;
+  gap: var(--space-3);
+  font-family: var(--font-display);
+}
+
+.job-hero__meta div {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.job-hero__meta dt {
+  color: var(--color-gray-300);
+  font-size: 0.5625rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.job-hero__meta dd {
+  margin: 0;
+  font-size: 0.625rem;
+  font-weight: 700;
+}
+
+.job-hero__visual {
+  position: absolute;
+  inset: auto -1rem 0 5rem;
+  height: 22.5rem;
+}
+
+.job-hero__paint,
+.job-hero__person {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.job-hero__paint {
+  opacity: 0.82;
+  scale: 1.04;
+}
+
+.job-hero__person {
+  inset-inline-start: 28%;
+  width: 62%;
+  object-position: center bottom;
+}
+
+.job-sticky-entry {
+  display: none;
+}
+
+.job-summary {
+  background: color-mix(in srgb, var(--color-gray-150) 70%, var(--color-paper));
+}
+
+.job-summary__layout,
+.job-team__layout,
+.job-profile__layout,
+.job-requirements__layout,
+.job-people__layout {
+  display: grid;
+  gap: var(--space-8);
+  padding-block-start: var(--space-8);
+}
+
+.job-summary h2,
+.job-responsibilities h2,
+.job-workflow h2,
+.job-team h2,
+.job-profile h2,
+.job-requirements h2,
+.job-process h2,
+.job-people h2,
+.job-entry h2,
+.job-invalid h1 {
+  margin: 0;
+  font-size: clamp(2.25rem, 10vw, 4.375rem);
+  letter-spacing: -0.045em;
+  line-height: 0.92;
+}
+
+.job-summary picture,
+.job-team picture,
+.job-profile picture {
+  margin-block-start: var(--space-8);
+}
+
+.job-summary img,
+.job-team img,
+.job-profile img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.job-summary__lead {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.job-summary__copy > p:not(.job-summary__lead) {
+  color: var(--color-gray-700);
+  font-size: 0.875rem;
+}
+
+.job-summary__copy small {
+  display: block;
+  margin-block-start: var(--space-12);
+  color: var(--color-gray-500);
+  font-family: var(--font-display);
+  font-size: 0.5625rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.job-responsibilities h2,
+.job-workflow h2,
+.job-process h2 {
+  margin-block-start: var(--space-8);
+}
+
+.responsibility-grid,
+.workflow-list,
+.team-role-list,
+.job-process ol {
+  margin: var(--space-8) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.responsibility-grid {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.responsibility-grid li {
+  position: relative;
+  display: grid;
+  min-height: 7.75rem;
+  grid-template-columns: 2.25rem minmax(0, 1fr);
+  gap: var(--space-4);
+  padding: 1rem 1rem 1rem 1.5rem;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-300);
+}
+
+.responsibility-grid li::before {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0.375rem;
+  background: var(--job-accent);
+  content: "";
+}
+
+.responsibility-grid li > span {
+  color: var(--color-gray-500);
+  font-family: var(--font-display);
+  font-size: 0.5625rem;
+  font-weight: 700;
+}
+
+.responsibility-grid h3 {
+  margin-block-end: var(--space-2);
+  font-size: 1.0625rem;
+}
+
+.responsibility-grid p {
+  margin: 0;
+  color: var(--color-gray-700);
+  font-size: 0.75rem;
+  line-height: 1.65;
+}
+
+.job-project {
+  padding-block: var(--space-16);
+  overflow: hidden;
+}
+
+.job-project__layout {
+  display: grid;
+  gap: var(--space-8);
+  padding-block-start: var(--space-8);
+}
+
+.job-project picture {
+  aspect-ratio: 350 / 292;
+  overflow: hidden;
+}
+
+.job-project picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 52%;
+}
+
+.job-project__copy {
+  position: relative;
+}
+
+.job-project__copy::after {
+  position: absolute;
+  z-index: 0;
+  inset: 0 -7rem auto auto;
+  width: 19rem;
+  height: 22rem;
+  background: url("../../images/paint/paint-project-red.png") center / contain no-repeat;
+  content: "";
+  opacity: 0.2;
+}
+
+.job-project__copy > * {
+  position: relative;
+  z-index: 1;
+}
+
+.job-project h2 {
+  margin-block: 0 var(--space-2);
+  font-size: clamp(3.25rem, 14vw, 4.5rem);
+  letter-spacing: -0.045em;
+}
+
+.job-project__flow {
+  color: var(--color-gray-300);
+  font-family: var(--font-display);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.job-project h3 {
+  margin-block: var(--space-8) var(--space-4);
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+}
+
+.job-project ul {
+  margin: 0;
+  padding-inline-start: 1.25rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.9;
+}
+
+.job-project__copy > p:last-child {
+  margin-block-start: var(--space-8);
+  color: var(--color-gray-300);
+  font-size: 0.75rem;
+}
+
+.job-workflow,
+.job-process {
+  background: color-mix(in srgb, var(--color-gray-150) 70%, var(--color-paper));
+}
+
+.workflow-list {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.workflow-list li {
+  display: grid;
+  min-height: 3.875rem;
+  grid-template-columns: 2rem 0.25rem minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-4);
+  padding: 0.75rem 1rem;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-300);
+  font-family: var(--font-display);
+}
+
+.workflow-list span,
+.workflow-list small {
+  color: var(--color-gray-500);
+  font-size: 0.5625rem;
+}
+
+.workflow-list i {
+  width: 0.25rem;
+  height: 2rem;
+  background: var(--job-accent);
+}
+
+.workflow-list strong {
+  font-size: 0.8125rem;
+}
+
+.job-team__layout > div:first-child > p {
+  color: var(--color-gray-700);
+  font-size: 0.8125rem;
+}
+
+.team-role-list {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.team-role-list li {
+  position: relative;
+  display: grid;
+  min-height: 4.25rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-4) var(--space-4) 1.5rem;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-300);
+  font-family: var(--font-display);
+}
+
+.team-role-list li::before {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0.375rem;
+  background: var(--department-color, var(--color-ink));
+  content: "";
+}
+
+.team-role-list strong {
+  font-size: 0.75rem;
+}
+
+.team-role-list span {
+  color: var(--color-gray-700);
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  text-align: right;
+}
+
+.department--business {
+  --department-color: var(--color-ink);
+}
+
+.department--corporate {
+  --department-color: var(--color-gray-700);
+}
+
+.job-profile {
+  padding-block: var(--space-16);
+}
+
+.job-profile__layout > div:last-child ul {
+  margin: 0;
+  padding-inline-start: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 2;
+}
+
+.job-profile__layout > div:last-child p {
+  margin-block: var(--space-8) 0;
+  padding-block-start: var(--space-6);
+  color: var(--color-gray-300);
+  border-top: 1px solid var(--color-gray-700);
+  font-family: var(--font-display);
+  font-size: 0.5625rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.job-requirements h3 {
+  margin-block: var(--space-8) var(--space-3);
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+}
+
+.job-requirements ul {
+  margin: 0;
+  padding-inline-start: 1.25rem;
+  color: var(--color-gray-700);
+  font-size: 0.8125rem;
+  line-height: 1.9;
+}
+
+.conditions-table {
+  margin: 0;
+  padding: var(--space-4);
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-300);
+}
+
+.conditions-table div {
+  display: grid;
+  min-height: 5.5rem;
+  grid-template-columns: 6.5rem minmax(0, 1fr);
+  align-items: start;
+  gap: var(--space-4);
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--color-gray-300);
+}
+
+.conditions-table div:last-child {
+  border-bottom: 0;
+}
+
+.conditions-table dt {
+  color: var(--color-gray-500);
+  font-family: var(--font-display);
+  font-size: 0.5625rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.conditions-table dd {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.job-requirements__note {
+  margin-block: var(--space-8) 0;
+  color: var(--color-gray-500);
+  font-size: 0.6875rem;
+}
+
+.job-process ol {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.job-process li {
+  display: grid;
+  min-height: 4.875rem;
+  grid-template-columns: 2.25rem minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-300);
+  font-family: var(--font-display);
+}
+
+.job-process li span,
+.job-process li small {
+  color: var(--color-gray-500);
+  font-size: 0.5625rem;
+}
+
+.job-process li strong {
+  font-size: 0.8125rem;
+}
+
+.job-people__layout > div:first-child > p {
+  margin-block-start: var(--space-8);
+  color: var(--color-gray-700);
+  font-size: 0.8125rem;
+}
+
+.related-person {
+  display: grid;
+  padding: var(--space-4);
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-300);
+}
+
+.related-person__visual {
+  position: relative;
+  min-height: 19.625rem;
+  overflow: hidden;
+}
+
+.related-person__visual img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.related-person__visual [data-related-paint] {
+  opacity: 0.76;
+  scale: 1.08;
+}
+
+.related-person__visual [data-related-image] {
+  inset-inline-start: 17%;
+  width: 66%;
+}
+
+.related-person__copy {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-6) var(--space-2) var(--space-2);
+}
+
+.related-person__copy small,
+.related-person__copy span {
+  color: var(--color-gray-500);
+  font-family: var(--font-display);
+  font-size: 0.5625rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.related-person__copy h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: -0.035em;
+}
+
+.related-person__copy p {
+  margin: 0;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.related-person__copy .button {
+  margin-block-start: var(--space-3);
+}
+
+.job-entry {
+  position: relative;
+  min-height: 30rem;
+  overflow: hidden;
+}
+
+.job-entry > img {
+  position: absolute;
+  inset: 0 -4rem auto auto;
+  width: 17rem;
+  opacity: 0.68;
+}
+
+.job-entry__inner {
+  position: relative;
+  z-index: 1;
+  padding-block: var(--space-12);
+}
+
+.job-entry h2 {
+  max-width: 48rem;
+}
+
+.job-entry h2 span {
+  white-space: normal;
+}
+
+.job-entry__inner > p {
+  margin-block: var(--space-8) var(--space-4);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.job-entry__inner > small {
+  display: block;
+  color: var(--color-gray-300);
+  font-family: var(--font-display);
+  font-size: 0.5625rem;
+  font-weight: 700;
+}
+
+.job-entry__inner > div {
+  display: grid;
+  gap: var(--space-3);
+  margin-block-start: var(--space-8);
+}
+
+.job-entry__primary {
+  background: var(--color-white);
+  color: var(--color-ink);
+  border-color: var(--color-white);
+}
+
+.job-entry__secondary {
+  background: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+.job-invalid {
+  display: grid;
+  min-height: calc(100dvh - var(--header-height));
+  align-items: center;
+  overflow: hidden;
+}
+
+.job-invalid .container {
+  position: relative;
+  padding-block: var(--space-16);
+}
+
+.job-invalid .container::after {
+  position: absolute;
+  inset: 0 -8rem auto auto;
+  width: 26rem;
+  height: 30rem;
+  background: url("../../images/paint/paint-project-red.png") center / contain no-repeat;
+  content: "";
+  opacity: 0.28;
+}
+
+.job-invalid h1,
+.job-invalid p,
+.job-invalid a,
+.job-invalid .job-accent {
+  position: relative;
+  z-index: 1;
+}
+
+.job-invalid p:not(.eyebrow) {
+  margin-block: var(--space-8);
+  font-weight: 600;
+}
+
+.job-invalid__button {
+  background: var(--color-white);
+  color: var(--color-ink);
+  border-color: var(--color-white);
+}
+
+@media (min-width: 48rem) {
+  .job-hero__copy {
+    position: relative;
+  }
+
+  .job-hero__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(22rem, 0.9fr);
+    align-items: center;
+    padding-block: var(--space-12);
+  }
+
+  .job-hero__meta {
+    position: static;
+    width: min(100%, 38rem);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-block-start: var(--space-12);
+    padding: 1.25rem;
+    border: 1px solid var(--color-gray-700);
+  }
+
+  .job-hero__visual {
+    position: relative;
+    inset: auto;
+    height: 38rem;
+  }
+
+  .job-summary__layout,
+  .job-team__layout,
+  .job-profile__layout,
+  .job-requirements__layout,
+  .job-people__layout {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-12);
+  }
+
+  .responsibility-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .job-project__layout {
+    grid-template-columns: minmax(0, 1fr) minmax(20rem, 0.9fr);
+    gap: var(--space-12);
+  }
+
+  .job-project picture {
+    aspect-ratio: 1;
+  }
+
+  .workflow-list {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: var(--space-4);
+  }
+
+  .workflow-list li {
+    min-height: 11.25rem;
+    grid-template-columns: 1fr;
+    align-content: start;
+    gap: var(--space-3);
+    padding: 1.25rem;
+  }
+
+  .workflow-list i {
+    width: 100%;
+    height: 0.25rem;
+  }
+
+  .team-role-list {
+    align-content: start;
+    margin-block-start: 0;
+  }
+
+  .job-profile__layout > div:last-child {
+    padding-block-start: var(--space-4);
+  }
+
+  .job-process ol {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .job-process li {
+    min-height: 9.375rem;
+    grid-template-columns: 1fr;
+    align-content: start;
+  }
+
+  .related-person {
+    grid-template-columns: 45% 55%;
+  }
+
+  .related-person__visual {
+    min-height: 28rem;
+  }
+
+  .related-person__copy {
+    align-content: center;
+    padding: var(--space-8);
+  }
+
+  .job-entry__inner > div {
+    width: min(100%, 34rem);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .job-entry > img {
+    inset: -2rem 1rem auto auto;
+    width: 33rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .job-hero {
+    min-height: 48.75rem;
+  }
+
+  .job-hero h1 {
+    font-size: 5.875rem;
+  }
+
+  .job-hero__tagline {
+    font-size: 1.5625rem;
+  }
+
+  .job-sticky-entry {
+    position: fixed;
+    z-index: var(--z-sticky);
+    inset: 50% 0 auto auto;
+    display: grid;
+    width: 4.5rem;
+    height: 11.875rem;
+    place-items: center;
+    padding: 1.25rem 0.75rem;
+    translate: 0 -50%;
+    background: var(--job-accent);
+    color: var(--job-accent-text);
+    font-family: var(--font-display);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    line-height: 1;
+    text-decoration: none;
+    text-orientation: mixed;
+    writing-mode: vertical-rl;
+  }
+
+  .job-sticky-entry span {
+    margin-block-start: var(--space-2);
+  }
+
+  .job-summary h2,
+  .job-responsibilities h2,
+  .job-workflow h2,
+  .job-team h2,
+  .job-profile h2,
+  .job-requirements h2,
+  .job-process h2,
+  .job-people h2,
+  .job-entry h2,
+  .job-invalid h1 {
+    font-size: 3.75rem;
+  }
+
+  .job-summary__layout,
+  .job-team__layout,
+  .job-profile__layout,
+  .job-requirements__layout,
+  .job-people__layout,
+  .job-project__layout {
+    padding-block-start: var(--space-12);
+  }
+
+  .job-summary__lead {
+    font-size: 1.375rem;
+  }
+
+  .job-summary__copy > p:not(.job-summary__lead) {
+    font-size: 0.9375rem;
+    line-height: 1.9;
+  }
+
+  .responsibility-grid li {
+    min-height: 12.125rem;
+    grid-template-columns: 4rem minmax(0, 1fr);
+    padding: 1.5rem 2rem;
+  }
+
+  .responsibility-grid h3 {
+    font-size: 1.5rem;
+  }
+
+  .responsibility-grid p {
+    font-size: 0.875rem;
+  }
+
+  .job-project {
+    padding-block: var(--space-24);
+  }
+
+  .job-project h2 {
+    font-size: 4.5rem;
+  }
+
+  .job-project ul {
+    font-size: 1rem;
+  }
+
+  .job-team__layout > div:first-child > p,
+  .job-people__layout > div:first-child > p {
+    font-size: 1rem;
+    line-height: 1.85;
+  }
+
+  .job-profile {
+    padding-block: var(--space-24);
+  }
+
+  .job-profile__layout > div:last-child ul {
+    font-size: 1.125rem;
+  }
+
+  .job-entry {
+    min-height: 35rem;
+  }
+
+  .job-entry__inner {
+    padding-block: 5.25rem;
+  }
+}
