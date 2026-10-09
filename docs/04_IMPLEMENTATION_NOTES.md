@@ -216,11 +216,11 @@ ATEL/
 
 - FontはSpace Grotesk / Noto Sans JPを使用する。外部配信を使用する場合はPrivacy / Performanceを考慮する。
 - ENTRYはポートフォリオ用Demoとし、実在の個人情報を送信しない。
-- Hostingと公開URLは未確定とし、相対パスで実装を進める。
+- HostingはGitHub Pages、公開URLは`https://coconattsu0723.github.io/atel-recruiting-site/`とする。
 
 ---
 
-## 12. 実装進捗（2026-10-09）
+## 12. 実装進捗（2026-10-10）
 
 ### 完了
 
@@ -257,6 +257,9 @@ ATEL/
 - `npm run build`で`index.html`、`pages/`、実際に参照される`assets/`、`robots.txt`、`sitemap.xml`だけを`dist/`へ出力する公開用Buildを追加した。
 - 公開用Buildは`localhost`、`file://`、`design/source-images`、`design/references`の参照を検出した場合に停止する。
 - 未使用Assetと`.DS_Store`を公開用出力から除外し、デザイン資料を含む743MBの作業フォルダから57.1MB / 66 Fileの公開用出力へ分離した。
+- 全ページのcanonical、`og:url`、`og:image`、`sitemap.xml`、`robots.txt`を確定URLへ揃えた。
+- GitHub Actionsから`dist/`をGitHub Pagesへ公開し、公開後のCache対策を含めて確認した。
+- `README.md`と`docs/06_PORTFOLIO_CASE_STUDY.md`へ制作記録、掲載用コピー、代表画面を整理した。
 
 ### 確認済み
 
@@ -287,8 +290,7 @@ ATEL/
 - `dist/`単体でも全5 Routeを390 / 1440pxで確認し、横方向のOverflow、見出し、Dialog、Filter、職種引き継ぎ、Missing Asset、Console Errorがない。
 - Button LabelはFlexで中央配置される。
 
-### 次工程
+### 現在地
 
-1. Hostingと公開URLを確定し、公開Directoryに`dist/`を指定する。
-2. 確定URLを使用してcanonical、`og:url`、`og:image`、sitemapを追加し、OGP画像を最終化する。仮URLは使用しない。
-3. Production環境で全ページ、Form Demo、404、Metadata、外部Font、Performanceを最終確認する。
+- 実装、公開、Production QA、Portfolio Documentationまで完了している。
+- 今後はユーザー指示に応じて保守・改善を行い、変更時は実装、正本デザイン、番号付き資料を同期する。

@@ -25,7 +25,7 @@ ATELは、店舗・商業空間の設計、デザイン、施工会社を想定�
 
 ## Current Phase
 
-企画、情報設計、デザインルール、主要画像素材と全ページのDesktop / Mobile画面設計が完了している。Pencil正本にはHOME、PEOPLE、Interview Dialog、JOBSの通常 / Filtered / Empty、JOB DETAIL、ENTRYのINPUT / CONFIRM / COMPLETE、Screen Map、Mobile Menu Open Stateを収録済み。HTML / CSS / Vanilla JavaScript実装は全ページ、共通UI、URL状態、Form状態まで完了し、375 / 390 / 768 / 1024 / 1366 / 1440pxの横断QA、内部Link、画像、Console、Metadataのローカル確認も完了している。Faviconと公開URLに依存しない基本OGPは設定済み。`npm run build`で公開対象だけを`dist/`へ出力でき、公開用出力単体のQAも完了している。次工程はHostingと公開URLを確定し、canonical、`og:url`、`og:image`、sitemapを最終化してProduction環境で確認する。
+企画、情報設計、デザイン、主要画像素材、HTML / CSS / Vanilla JavaScript実装、レスポンシブ、アクセシビリティ、Metadata、公開用Buildまで完了している。GitHub Pagesの公開URLは`https://coconattsu0723.github.io/atel-recruiting-site/`で、canonical、OGP、sitemap、robotsを設定済み。375 / 390 / 768 / 1024 / 1366 / 1440px、主要導線、Dialog、Filter、無効Query、Form Demo、404、画像、ConsoleをProduction環境で確認済み。Portfolio Documentationは`README.md`と`docs/06_PORTFOLIO_CASE_STUDY.md`を正本とする。以後はユーザー指示に応じた保守・改善を行い、画面仕様を変更した場合は実装、Pencil正本、番号付き資料を一致させる。
 
 Pencilの現在の正本は`design/wireframes/ATEL_HOME_DESIGN.pen`とする。旧版は`design/wireframes/archive/ATEL_HOME_WIREFRAME_legacy.pen`へ移動済みであり、通常作業では参照・編集しない。
 
