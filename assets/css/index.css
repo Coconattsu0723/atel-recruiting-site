@@ -131,7 +131,6 @@
   position: relative;
   min-height: 57.5rem;
   padding-block: 2.2rem 4rem;
-  background-image: repeating-linear-gradient(90deg, transparent 0 calc(25% - 1px), rgb(255 255 255 / 5.5%) calc(25% - 1px) 25%);
 }
 
 .message-section__grid {
@@ -923,14 +922,6 @@
     background: var(--color-paper);
   }
 
-  .home-hero::before {
-    position: absolute;
-    inset: 0;
-    background-image: repeating-linear-gradient(90deg, transparent 0 calc(8.333% - 1px), rgb(36 87 230 / 8%) calc(8.333% - 1px) 8.333%);
-    content: "";
-    pointer-events: none;
-  }
-
   .home-hero::after {
     position: absolute;
     z-index: 0;
@@ -1040,7 +1031,6 @@
   .message-section {
     min-height: 50rem;
     padding-block: 2.75rem 3.5rem;
-    background-image: repeating-linear-gradient(90deg, transparent 0 calc(8.333% - 1px), rgb(255 255 255 / 5.5%) calc(8.333% - 1px) 8.333%);
   }
 
   .message-section__grid {

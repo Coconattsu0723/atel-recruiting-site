@@ -252,9 +252,10 @@ ATEL/
 - 全5ページへSVG Favicon、Theme Color、ページ固有の基本OGP、Twitter Cardを設定した。
 - JOB DETAILの動的Title / Descriptionと`og:title` / `og:description`を職種・Not Found状態へ同期した。
 - HOMEの装飾Paint、人物Cut-out、Polaroid Frameを含む全画像へ原寸の`width` / `height`を設定した。
-- `npm run build`で`index.html`、`pages/`、実際に参照される`assets/`、`robots.txt`だけを`dist/`へ出力する公開用Buildを追加した。
+- 最新の画面調整として、HOME HeroとMESSAGE Sectionの背景用縦Grid LineをDesktop / Mobileともに削除した。
+- `npm run build`で`index.html`、`pages/`、実際に参照される`assets/`、`robots.txt`、`sitemap.xml`だけを`dist/`へ出力する公開用Buildを追加した。
 - 公開用Buildは`localhost`、`file://`、`design/source-images`、`design/references`の参照を検出した場合に停止する。
-- 未使用Assetと`.DS_Store`を公開用出力から除外し、デザイン資料を含む743MBの作業フォルダから57.1MB / 65 Fileの公開用出力へ分離した。
+- 未使用Assetと`.DS_Store`を公開用出力から除外し、デザイン資料を含む743MBの作業フォルダから57.1MB / 66 Fileの公開用出力へ分離した。
 
 ### 確認済み
 
